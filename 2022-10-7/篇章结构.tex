@@ -1,0 +1,35 @@
+﻿\documentclass{ctexart}%使用usepackage是在最前面排版，ctexart是居中排版,可用\ctexset更改
+\ctexset{
+    section={
+        format+=\zihao{-4} \heiti \raggedright,
+        name={,、},
+        number=\chinese{section},
+        beforeskip=1.0ex plus 0.2ex minus .2ex,
+        afterskip=1.0ex plus 0.2ex minus .2ex,
+        aftername=\hspace{0pt}
+    },
+    subsection={
+        format+=\zihao{5} \heiti \raggedright,
+        name={\thesubsection、},
+        number=\arabic{subsection},
+        beforeskip=1.0ex plus 0.2ex minus.2ex,
+        afterskip=1.0ex plus 0.2ex minus .2ex,
+        aftername=\hspace{0pt}
+    }
+}
+
+\begin{document}
+    \tableofcontents
+
+    \section{引言}
+    \section{实验方法}
+    \section{实验结果}
+    \subsection{数据}
+    \subsection{图表}
+    \subsubsection{实验条件}%最多两个sub
+    \subsubsection{实验过程}
+    \subsection{结果分析}
+    \section{结论}
+    \section{致谢}
+\end{document}
+%使用\chapter命令需要ctexbook文件

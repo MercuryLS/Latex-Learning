@@ -1,0 +1,52 @@
+﻿%导言区
+\documentclass[10pt]{ctexart}
+\newcommand{\myfont}{\textit{\textbf{\textsf{Fancy Text}}}}
+
+%正文区
+\begin{document}
+%字体族设置（罗马，无衬线，打印机）
+    \textrm{Roman Family}   \textsf{Sans Serif Family}   \texttt{Typewriter Family}
+    {\rmfamily Romen Family}    {\sffamily Sans Serif Family}   {\ttfamily Typewriter Family}   %大括号表示字体的作用范围
+    {\sffamily who are you?}
+    
+    {\ttfamily who are you?}
+    
+    who are you?
+    
+    who are you?
+
+%字体系列设置(粗细，宽度)
+    \textmd{Medium Series} \textbf{Boldface Series}
+    {\mdseries Medium Series} {\bfseries Boldface Series}
+
+%字体形状设置(直立，斜体，伪斜体，小型大写)
+    \textup{Upright Shape} \textit{Italic Shape}
+    \textsl{Slanted Shape} \textsc{Small Caps Shape}
+
+    {\upshape Upright Shape} {\itshape Italic Shape}
+    {\slshape Slanted Shape} {\scshape Small Caps Shape}
+
+%中文字体
+    {\songti 宋体} \quad    %这是空格,中文空格要用\quad，直接在中文的源敲是没有空格的，英文可以直接空格
+    {\heiti 黑体}  \quad
+    {\fangsong 仿宋} \quad
+    {\kaishu 楷书}
+    %{\textbf 粗体}
+    %{\textit 斜体}
+
+%字体大小
+    {\tiny       Hello}\\%\\表示另起一行
+    {\scriptsize Hello}\\
+    {\footnotesize Helo}\\
+    {\small Hello}\\
+    {\normalsize Hello}\\
+    {\large Hello}\\
+    {\Large Hello}\\
+    {\LARGE Hello}\\
+    {\huge Hello}\\
+    {\Huge Hello}\\
+
+%中文字号设置命令
+    \zihao{5}你好！\\
+    \myfont
+    \end{document}
