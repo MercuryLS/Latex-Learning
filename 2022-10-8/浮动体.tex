@@ -1,0 +1,29 @@
+﻿\documentclass{ctexart}
+\usepackage{graphicx}
+\graphicspath{{figures/}}%注意这里是正斜线
+\begin{document}
+    \LaTeX中的插图\ref{fig-pic}
+    \begin{figure}[htbp]%可填htbp，h此处,t页顶,b页底,p独立一页
+        \centering  %ctrl+t快速注释,ctrl+u去注释
+        \caption{手绘}\label{fig-pic}
+        \includegraphics[scale=0.3]{1}\\
+        %\caption的位置决定标题的位置
+    \end{figure}\\
+    引用\ref{tab-score}
+    \LaTeX中的表格：
+    \begin{table}
+        \centering
+        \caption{成绩单}\label{tab-score}
+        \begin{tabular}{|l||c|c|c|p{1.5cm}|}%l,c,r左，居中，右对齐，|产生竖线,p{}指定宽度，不够则自动换行,每一列必须有内容,否则无法加载竖线
+            \hline
+            姓名 & 语文 & 数学 & 外语 & 备注\\
+            \hline \hline
+            张三 & 22 & 22 & 22  &--         \\ 
+            \hline
+            李四 & 22 & 22 & 22  &----------------------------------  \\
+            \hline
+            王五 & 22 & 22 & 22  &--      \\
+            \hline 
+        \end{tabular}
+    \end{table}
+\end{document}

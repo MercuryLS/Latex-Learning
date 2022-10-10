@@ -1,0 +1,27 @@
+﻿%导言区
+\documentclass{article}
+\usepackage{ctex}
+
+%正文区
+\begin{document}
+    \section{空白符号}
+    Are you wiser than        others?\\
+    红红\ 火火恍恍  惚惚红   you wiser than红火\ \ \ 火\quad恍恍\quad\quad惚%中文中无论多少空格都不显示,中英之间，英文之间空格最多显示一个,而用\quad,\空格指令空格可以叠加
+    \section{\LaTeX 控制符}%一个a~b输出一个硬空格无法分割
+    \# \$ \% \{ \} \~{} \_{} \^{} \textbackslash%输出一个反斜线
+    \&
+    \section{排版符号}
+    \S \P \dag \ddag \copyright \pounds
+    \section{\TeX 标志符号}
+    \TeX{} \LaTeX{} \LaTeXe{}
+    %\XeLaTeX{}  %需要引入宏包xltxtra
+    \section{引号}
+    `%数字1左边的`  '%英文单引号 ``%两个数字1左边的 ''%两个单引号
+    \section{连字符}
+    - -- ---
+    \section{非英文符号}
+    \oe \OE \ae \AE \aa \AA \o \O \l \L \ss \SS ！` ?`
+    \section{重音符号(以o为例)}
+    \`o \'o \^o \''o \~o \=o \.o \u{o} \v{o} \H{o} \r{o}
+    \t{o} \b{o} \c{o} \d{o}
+\end{document}

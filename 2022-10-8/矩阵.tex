@@ -1,0 +1,45 @@
+﻿\documentclass{ctexart}
+\usepackage{amsmath}
+\usepackage{mathdots}%用\iddots
+\begin{document}
+    \[%这个中括号不要少
+    \begin{pmatrix}%begin和end直接不要有空行否则报错
+        0&1\\
+        1&0\\
+    \end{pmatrix}
+    \begin{bmatrix}
+        0&1\\
+        1&0\\
+    \end{bmatrix}
+    \begin{Bmatrix}
+        0&1\\
+        1&0\\
+    \end{Bmatrix}_{n \times n}
+    \begin{vmatrix}
+        a_{11}&\dots&a_{1n}\\
+        \iddots&\ddots&\vdots\\
+        0& & a_{nn}
+    \end{vmatrix}
+    \begin{Vmatrix}
+        0&a_{12}^2\\
+        1&0\\
+    \end{Vmatrix}
+    \begin{pmatrix}%分块矩阵
+        \begin{matrix} 1&0\\0&1 \end{matrix}
+        & \text{\Large 0}\\%不使用\text则效果不一样
+        \text{\Large0} & \begin{matrix}
+        1&0\\0&1 \end{matrix}
+    \end{pmatrix}
+    \left(%左括号和下文右括号需要手动加
+    \begin{smallmatrix}
+        x&-y\\y&x
+    \end{smallmatrix}
+    \right)
+    %array环境
+    \begin{array}{r|r}
+        \frac12&0\\
+        \hline
+        0&-\frac abc\\
+    \end{array}
+    \]
+\end{document}
