@@ -1,5 +1,10 @@
 ﻿\documentclass{ctexart}
 \usepackage{amsmath,amsthm,amssymb,graphicx}
+\usepackage{fancyhdr}% 设hi页面样式
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}% 去掉fancy中的眉线
+\fancyhf{}
+\cfoot{\thepage}
 \CTEXsetup[format={\normalfont\normalsize}]{subsubsection} % 让subsubsection中的文字不被加黑
 \linespread{1.5} % 1.5倍行距
 \setCJKmainfont[SizeFeatures={Size=12},AutoFakeBold=2.5,AutoFakeSlant=0.2]{SimSun} % 全文默认小四号宋体
